@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitly — Personalized Workout & Diet Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app"> 
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">▰</span> fitly <small>BETA</small></div>
+      <my>
+        <button class="my-item active" data-page="overview">▦ <span>Overview</span></button>
+        <button class="my-item" data-page="workouts">⚊ <span>My workouts</span></button>
+        <button class="my-item" data-page="meals">◒ <span>Meal plans</span></button>
+        <button class="my-item" data-page="progress">⌁ <span>Progress</span></button>
+      </my>
+      <div class="workspace">WORKSPACE</div>
+      <my>
+        <button class="my-item" data-page="preferences">⚙ <span>Preferences</span></button>
+        <button class="my-item" data-page="help">? <span>Help center</span></button>
+      </my>
+      <div class="make-yours">
+        <b>✦ Make it yours</b>
+        <p>Tell Fitly what your week really looks like.</p>
+        <button onclick="showPage('preferences')">Edit profile →</button>
+      </div>
+      <div class="user"><span>SP</span><div>Srishti<small>Personal plan</small></div><b>•••</b></div>
+    </aside>
+
+    <main class="main">
+      <header>
+        <div><span class="muted">Tuesday</span> · <b>11 August 2026</b> <span class="muted">05:14 pm</span></div>
+        <div class="header-actions">⌕　♧ <span class="avatar">SP</span></div>
+      </header>
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <button class="chat-toggle" onclick="toggleChat()">✦ <span>Fitly chatbot</span></button>
+  <div id="chat" class="chat hidden">
+    <div class="chat-head">Fitly AI <button onclick="toggleChat()">×</button></div>
+    <div id="messages" class="messages"><div class="bot">Hi! Tell me your goal, available time, or ask for a meal/workout idea.</div></div>
+    <div class="chat-input"><input id="chatInput" placeholder="Ask about your plan..."><button onclick="sendChat()">➤</button></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
