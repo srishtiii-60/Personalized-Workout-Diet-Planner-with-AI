@@ -11,7 +11,7 @@ A modern fitness and nutrition planning web application inspired by the Fitly co
 - User preference section
 - Smart meal-swap interaction
 - Built-in chatbot-style assistant
-- Responsive layout for desktop and mobile
+- Responsive layout for desktop and mmobile
 - Clean green wellness-focused UI
 
 ## Tech Stack
