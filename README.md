@@ -2,7 +2,7 @@
 
 A modern fitness and nutrition planning web application inspired by the Fitly concept. The project provides a personalized dashboard for workouts, meal planning, progress tracking, preferences, and an AI-style assistant.
 
-## Features
+## Featuers
 
 - Personalized fitness dashboard
 - Workout plan and completion tracking
